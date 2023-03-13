@@ -134,17 +134,22 @@ class _HomeState extends State<Home> {
                                       width: 100, height: 200)),
                               InkWell(
                                 onTap: () {
-                                  List s=[" Samsung Galaxy M04 Light Green, 4GB RAM, 64GB Storage | Upto 8GB RAM with RAM Plus | MediaTek Helio P35 | 5000 mAh Battery"];
+                                  List s=["Apple iPhone 14 (128 GB) - Blue"];
                                   Navigator.pushNamed(context, "pro",
                                       arguments: s);
                                 },
                                 child: Image.asset('assets/image/p2.jpeg',
                                     width: 100, height: 200),
                               ),
-                              Image.asset(
-                                'assets/image/p3.jpeg',
-                                width: 100,
-                                height: 100,
+                              InkWell(onTap: () {
+                                List s=["Samsung Galaxy M33 5G (Deep Ocean Blue, 6GB, 128GB Storage) | 6000mAh Battery | Upto 12GB RAM with RAM Plus | Travel Adapter to be Purchased Separately"];
+                                Navigator.pushNamed(context, "pro",arguments: s);
+                                },
+                                child: Image.asset(
+                                  'assets/image/p3.jpeg',
+                                  width: 100,
+                                  height: 100,
+                                ),
                               )
                             ],
                           ),
@@ -156,12 +161,27 @@ class _HomeState extends State<Home> {
                         child: SingleChildScrollView(
                           child: Row(
                             children: [
-                              Image.asset('assets/image/s1.jpeg',
-                                  width: 100, height: 300),
-                              Image.asset('assets/image/s2.jpeg',
-                                  width: 100, height: 300),
-                              Image.asset('assets/image/s3.jpeg',
-                                  width: 100, height: 300),
+                              InkWell(onTap: () {
+                                List s =["PATLANI STYLEEmbroidered Bollywood Net Saree  (Brown)Special price₹380"];
+                                Navigator.pushNamed(context, "pro",arguments: s);
+                              },
+                                child: Image.asset('assets/image/s1.jpeg',
+                                    width: 100, height: 300),
+                              ),
+                              InkWell(onTap: () {
+                                List s=["AadvikaPrinted, Self Design, Embellished Mysore Art Silk Saree  (Pack of 3, Dark Blue, Red, Pink)Special price ₹629"];
+                                Navigator.pushNamed(context, "pro",arguments: s);
+                              },
+                                child: Image.asset('assets/image/s2.jpeg',
+                                    width: 100, height: 300),
+                              ),
+                              InkWell(onTap: () {
+                                List s=["SamahPrinted, Striped, Floral Print Banarasi Silk Blend Saree  (Pack of 3, Green, Blue, Yellow)Special price₹649"];
+                                Navigator.pushNamed(context, "pro",arguments: s);
+                              },
+                                child: Image.asset('assets/image/s3.jpeg',
+                                    width: 100, height: 300),
+                              ),
                             ],
                           ),
                         ),

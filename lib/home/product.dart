@@ -13,9 +13,10 @@ class _ProductState extends State<Product> {
     dynamic s= ModalRoute.of(context)!.settings.arguments ;
     return Scaffold(
       appBar: AppBar(
-        title: Text("hyy"),
+        backgroundColor: Colors.black12,
+        title: Text("Product Detali"),
       ),
-      body: Text("$s"),
+      body: Center(child: Text("${s[0]}",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold),)),
     );
   }
 }
