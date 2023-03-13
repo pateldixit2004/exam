@@ -10,10 +10,12 @@ class Product extends StatefulWidget {
 class _ProductState extends State<Product> {
   @override
   Widget build(BuildContext context) {
+    dynamic s= ModalRoute.of(context)!.settings.arguments ;
     return Scaffold(
       appBar: AppBar(
         title: Text("hyy"),
       ),
+      body: Text("$s"),
     );
   }
 }
